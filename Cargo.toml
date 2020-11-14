@@ -1,0 +1,11 @@
+[package]
+name = "actix-client-leak"
+version = "0.1.0"
+authors = ["sfisol <wolfmoon@o2.pl>"]
+edition = "2018"
+
+[dependencies]
+actix-web = { version = "3.2.0" }
+# actix-web = { version = "3.2.0", features = ["rustls"] }
+procinfo = "0.4.2"
+# jemallocator = "0.3.2"
