@@ -10,8 +10,9 @@ use procinfo::pid::stat_self;
 async fn main() -> io::Result<()> {
     let mut x = 1;
     let mut rss = 0;
+    let my_client = Client::default();
     loop {
-        let _ = Client::default()
+        let _ = my_client
             .get("https://google.com")
             // .get("http://google.com")
             .send()
